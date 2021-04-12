@@ -2,7 +2,7 @@
 
 My personal personal portafolio
 
-![screenshot](imgs/project-screenshot.png)
+![screenshot](images/project-screenshot.png)
 
 ## Built With
 
