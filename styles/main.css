@@ -73,9 +73,8 @@ main section {
 }
 
 .my-pic {
-    width: 21vw;
-    height: 27vw;
-    right: 50px;
+    width: 50%;
+    height: auto;
     opacity: 0.75;
     border-radius: 3px;
 }
@@ -113,5 +112,9 @@ main section {
     main {
         margin: 30px 0;
         padding: 0 150px;
+    }
+    
+    .my-pic {
+        width: 100%;
     }
 }
