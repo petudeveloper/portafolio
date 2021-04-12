@@ -118,3 +118,13 @@ main section {
         width: 100%;
     }
 }
+
+@media (max-width: 450px) {
+    #social-media {
+        font-size: 12px;
+    }
+
+    .info-projec p {
+        font-size: 12px;
+    }
+}
