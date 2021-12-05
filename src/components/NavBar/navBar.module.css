@@ -1,5 +1,5 @@
 .container {
-  font-family: 'Space Mono', monospace;
+  font-family: var(--font-mono);
 }
 
 .nav {
@@ -47,6 +47,7 @@
   padding: 10px 15px;
   text-decoration: none;
   color: var(--light-blue);
+  border-radius: 4px;
 }
 
 .icons {
@@ -75,6 +76,10 @@
     justify-content: center;
     z-index: 0;
     align-items: center;
+    background-color: var(--dark-blue);
+    -webkit-box-shadow: -200px -1px 300px 200px rgba(0,0,0,0.75);
+    -moz-box-shadow: -200px -1px 300px 200px rgba(0,0,0,0.75);
+    box-shadow: -200px -1px 300px 200px rgba(0,0,0,0.75);
   }
 
   .nav ol {
@@ -90,6 +95,5 @@
 
   .resumeLink {
     padding: 18px 50px;
-    border-radius: 4px;
   }
 }
