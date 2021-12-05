@@ -1,26 +1,26 @@
-import styles from './navBar.module.css';
 import { useState } from 'react';
-import { FaBars } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/ai";
+import { FaBars } from 'react-icons/fa';
+import { AiOutlineClose } from 'react-icons/ai';
+import styles from './navBar.module.css';
 
 const NavBar = () => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   const handleClick = (e) => {
     e.preventDefault();
-    setOpen(!open)
-  }
+    setOpen(!open);
+  };
 
   return (
     <header className={styles.container}>
       <nav className={styles.nav}>
         <div>
           <a href="/" className={styles.logoLink}>
-            <img src="./images/logo.png" alt="petudeveloper-logo" className={styles.logo}/>
+            <img src="./images/logo.png" alt="petudeveloper-logo" className={styles.logo} />
           </a>
         </div>
-        <div className={styles.icons} >
+        <div className={styles.icons}>
           <a href="/" onClick={(e) => handleClick(e)}>
-            <FaBars className={open ? styles.invisibleIcon : styles.visibleIcon}/>
+            <FaBars className={open ? styles.invisibleIcon : styles.visibleIcon} />
           </a>
           <a href="/" onClick={(e) => handleClick(e)}>
             <AiOutlineClose className={open ? styles.visibleIcon : styles.invisibleIcon} />
@@ -47,7 +47,7 @@ const NavBar = () => {
         </div>
       </nav>
     </header>
-  )
+  );
 };
 
 export default NavBar;
