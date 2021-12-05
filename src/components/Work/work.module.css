@@ -1,0 +1,36 @@
+.container {
+  margin-top: 200px;
+  padding: 0 50px;
+}
+
+.numberedHeading::before {
+  color: var(--light-blue);
+  counter-increment: section 1;
+  content: "0" counter(section) ". ";
+  font-family: var(--font-mono);
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+.numberedHeading {
+  color: var(--lightest-slate);
+  font-size: 1.7rem;
+}
+
+.content {
+  color: var(--medium-blue);
+  text-align: justify;
+  font-size: 1.1rem;
+  opacity: 0.6;
+}
+
+.content:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 0;
+  }
+}
