@@ -1,0 +1,34 @@
+.h1, h2, h3 {
+  line-height: 0.9;
+}
+
+.h1 {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--light-blue);
+}
+
+.h2 {
+  font-size: 8vw;
+  color: var(--lightest-slate);
+  margin: 25px 0;
+}
+
+.h3 {
+  font-size: 8vw;
+  color: var(--medium-blue);
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.text {
+  color: var(--medium-blue);
+  font-size: 1.1rem;
+  max-width: 540px;
+  line-height: 1.3;
+  text-align: justify;
+}
+
+.highlight {
+  color: var(--light-blue);
+}
