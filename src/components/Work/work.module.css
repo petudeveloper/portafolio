@@ -22,6 +22,8 @@
   text-align: justify;
   font-size: 1.1rem;
   opacity: 0.6;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 
 .content:hover {
