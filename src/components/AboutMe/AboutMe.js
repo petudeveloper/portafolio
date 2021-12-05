@@ -15,14 +15,13 @@ const AboutMe = () => (
         <p>
           Here are a few technologies I’ve been working with recently:
         </p>
-        <ul>
+        <ul className={styles.list}>
           <li>JavaScript (ES6+)</li>
           <li>React</li>
           <li>Node.js</li>
           <li>MongoDB</li>
           <li>Ruby on Rails</li>
-          <li>PostgreSQL</li>
-          <li>MySQL</li>
+          <li>PostgreSQL-MySQL</li>
         </ul>
       </div>
       <div className={styles.imageContainer}>

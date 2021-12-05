@@ -47,6 +47,17 @@
   max-width: 205px;
 }
 
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 425px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .content {
     grid-template-columns: 1fr;
