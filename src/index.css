@@ -24,11 +24,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  counter-reset: section;
+  height: 100vh;
 }
 
 .App {
   background-color: var(--dark-blue);
-  height: 100vh;
 }
 
 code {
