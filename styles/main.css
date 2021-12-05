@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body {
+    background: #0a192f;
+    font-size: 19px;
+}
+
+.SMdisplay {
+    font-family: 'Space Mono', monospace;
+}
+
+.calibre {
+    font-family: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+}
+
+.light-color {
+    color: #ccd6f6;
+}
+
+.darker-color {
+    color: #8892b0;
+}
+
+.green-light {
+    color: #64ffda;
+}
+
+.logo {
+    width: 42px;
+}
+
+li span:hover {
+    color: #64ffda;
+}
+
+/* START header */
+
+#top-nav {
+    height: 100px;
+    background: #0a192ffa;
+    z-index: 100;
+}
+
+/* END header */
+/* START main */
+
+main {
+    margin: 30px 0;
+    padding: 0 50px;
+}
+
+main section {
+    padding: 100px 0;
+}
+
+#presentation h1 {
+    font-size: 1rem;
+}
+
+#presentation h2,h3 {
+    font-size: 6.5vw;
+}
+
+#presentation p {
+    margin: 20px 0px 0px;
+    max-width: 500px;
+}
+
+#tech-now-days {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1rem;
+}
+
+.my-pic {
+    width: 50%;
+    height: auto;
+    opacity: 0.75;
+    border-radius: 3px;
+}
+
+.my-pic:hover {
+    border-right: 1.5px solid #64ffda;
+    border-bottom: 1.5px solid #64ffda;
+    opacity: 1;
+}
+
+.single-work {
+    height: 300px;
+}
+
+.info-projec {
+    height: 130px;
+    border: 1px solid #64ffda;
+    background: #05333bd7;
+    z-index: 9;
+    top: 25%;
+    font-size: 1rem;
+}
+
+.icon-link-project {
+    text-align: end;
+}
+
+#social-media {
+    list-style: none;
+}
+
+    /* END main */
+
+@media (min-width: 768px) {
+    main {
+        margin: 30px 0;
+        padding: 0 150px;
+    }
+    
+    .my-pic {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    #social-media {
+        font-size: 12px;
+    }
+
+    .info-projec p {
+        font-size: 12px;
+    }
+}
