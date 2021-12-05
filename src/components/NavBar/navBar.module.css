@@ -22,7 +22,7 @@
 }
 
 .visibleIcon {
-  display: block;
+  display: flex;
 }
 
 .invisibleIcon {
@@ -55,18 +55,27 @@
   font-size: 1.8rem;
 }
 
+.icons a {
+  color: var(--light-blue);
+}
+
 @media (max-width: 768px) {
   .links {
-    /* display: none; */
+    display: none;
+  }
+
+  .visibleLinks {
+    display: flex;
     position: absolute;
     top: 0;
     right: 0;
     flex-direction: column;
     height: 100vh;
     width: 50%;
-    gap: 35px;
+    grid-gap: 35px;
     justify-content: center;
     z-index: 0;
+    align-items: center;
   }
 
   .nav ol {
@@ -78,5 +87,10 @@
     display: block;
     z-index: 1;
     cursor: pointer;
+  }
+
+  .resumeLink {
+    padding: 18px 50px;
+    border-radius: 4px;
   }
 }

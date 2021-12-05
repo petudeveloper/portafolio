@@ -20,13 +20,13 @@ const NavBar = () => {
         </div>
         <div className={styles.icons} >
           <a href="/" onClick={(e) => handleClick(e)}>
-            <FaBars className={open ? styles.visibleIcon : styles.invisibleIcon}/>
+            <FaBars className={open ? styles.invisibleIcon : styles.visibleIcon}/>
           </a>
           <a href="/" onClick={(e) => handleClick(e)}>
-            <AiOutlineClose className={open ? styles.invisibleIcon : styles.visibleIcon} />
+            <AiOutlineClose className={open ? styles.visibleIcon : styles.invisibleIcon} />
           </a>
         </div>
-        <div className={styles.links}>
+        <div className={open ? styles.visibleLinks : styles.links}>
           <ol>
             <li>
               <span className={styles.listElement}>About</span>
