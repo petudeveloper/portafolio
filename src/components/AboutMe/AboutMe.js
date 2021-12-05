@@ -1,4 +1,5 @@
-import styles from './aboutMe.module.css'
+/* eslint-disable max-len */
+import styles from './aboutMe.module.css';
 
 const AboutMe = () => (
   <section className={styles.container}>

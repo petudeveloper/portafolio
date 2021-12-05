@@ -47,3 +47,9 @@ code {
   text-align: left;
   margin-top: 35px;
 }
+
+@media (max-width: 425px) {
+  .content {
+    padding: 0 50px;
+  }
+}

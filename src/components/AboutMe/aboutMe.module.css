@@ -16,11 +16,6 @@
   margin: 200px 0;
 }
 
-.content:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
-
 .content {
   color: var(--medium-blue);
   text-align: justify;
@@ -29,6 +24,11 @@
   gap: 65px;
   grid-template-columns: 2fr 1fr;
   opacity: 0.6;
+}
+
+.content:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 .imageContainer {
@@ -45,4 +45,16 @@
   width: 100%;
   border-radius: 10px;
   max-width: 205px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .imageContainer {
+    border: none;
+    text-align: center;
+  }
 }
