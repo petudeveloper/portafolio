@@ -1,5 +1,5 @@
 .container {
-  margin-top: 200px;
+  margin-top: 100px;
   padding: 0 50px;
 }
 
@@ -21,14 +21,8 @@
   color: var(--medium-blue);
   text-align: justify;
   font-size: 1.1rem;
-  opacity: 0.6;
   display: grid;
   grid-template-columns: 1fr 3fr;
-}
-
-.content:hover {
-  transform: scale(1.1);
-  opacity: 1;
 }
 
 @media (max-width: 425px) {
