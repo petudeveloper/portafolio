@@ -91,7 +91,7 @@
   color: var(--light-blue);
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .container {
     padding: 0;
   }

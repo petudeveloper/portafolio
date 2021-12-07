@@ -54,10 +54,6 @@
 }
 
 @media (max-width: 425px) {
-  .container {
-    padding: 0;
-  }
-
   .list {
     grid-template-columns: 1fr;
   }
@@ -72,5 +68,11 @@
   .imageContainer {
     border: none;
     text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0;
   }
 }

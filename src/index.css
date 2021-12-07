@@ -49,7 +49,7 @@ code {
   margin-top: 35px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .content {
     padding: 0 50px;
   }
