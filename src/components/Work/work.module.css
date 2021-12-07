@@ -40,6 +40,19 @@
   height: 100%;
 }
 
+.activities {
+  list-style: none; /* Remove default bullets */
+}
+
+.activities li::before {
+  content: "\2023";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--light-blue); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
 .list button {
   background-color: transparent;
   border: none;
@@ -47,9 +60,21 @@
   font-family: var(--font-mono);
   padding: 10px 15px;
   border-left: 2px solid;
-  width: 100%;
+  width: 90%;
   text-align: left;
   height: 100%;
+}
+
+.list button:focus {
+  border-left: 3px solid var(--light-blue);
+  color: var(--light-blue);
+  background-color: var(--light-navy);
+  outline: none;
+}
+
+.list button:hover {
+  background-color: var(--light-navy);
+  cursor: pointer;
 }
 
 .companyCard {
@@ -63,6 +88,7 @@
   font-family: var(--font-mono);
   margin: 0;
   font-size: 0.9rem;
+  color: var(--light-blue);
 }
 
 @media (max-width: 425px) {

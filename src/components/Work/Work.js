@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-autofocus */
 import { useState } from 'react';
 import styles from './work.module.css';
 
@@ -55,8 +56,11 @@ const Work = () => {
       <h2 className={styles.numberedHeading}>Where I’ve Worked</h2>
       <div className={styles.content}>
         <ul className={styles.list}>
+          <li key={works[0].id}>
+            <button autoFocus type="button" onClick={() => handleClick(works[0].id)}>{works[0].title}</button>
+          </li>
           {
-            works.map((work) => (
+            works.slice(1).map((work) => (
               <li key={work.id}>
                 <button type="button" onClick={() => handleClick(work.id)}>{work.title}</button>
               </li>
@@ -67,7 +71,7 @@ const Work = () => {
         <div>
           <p className={styles.companyCard}>{currentWork.company}</p>
           <p className={styles.dateCard}>{currentWork.date}</p>
-          <ul>
+          <ul className={styles.activities}>
             {
               currentWork.activities.map((activity) => (
                 <li key={activity}>{activity}</li>
