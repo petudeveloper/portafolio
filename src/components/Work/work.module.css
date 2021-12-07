@@ -1,6 +1,6 @@
 .container {
   margin-top: 100px;
-  padding: 0 50px;
+  padding: 0 40px;
 }
 
 .numberedHeading::before {
@@ -22,7 +22,47 @@
   text-align: justify;
   font-size: 1.1rem;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1.3fr 3fr;
+  padding: 30px 0;
+}
+
+.list {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  height: fit-content;
+}
+
+.list li {
+  height: 100%;
+}
+
+.list button {
+  background-color: transparent;
+  border: none;
+  color: var(--medium-blue);
+  font-family: var(--font-mono);
+  padding: 10px 15px;
+  border-left: 2px solid;
+  width: 100%;
+  text-align: left;
+  height: 100%;
+}
+
+.companyCard {
+  color: var(--lightest-slate);
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.dateCard {
+  font-family: var(--font-mono);
+  margin: 0;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 425px) {

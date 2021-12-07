@@ -1,26 +1,23 @@
 import { useState } from 'react';
-import Card from './Card';
 import styles from './work.module.css';
 
 const Work = () => {
-  const [currentWork, setCurrentWork] = useState('');
-
   const works = [
     {
       id: 1,
       title: 'CODE REVIEWER',
       company: 'Microverse',
       date: 'Nov 2021 – Actual',
-      functions: [
+      activities: [
         'Use mentoring, teamwork, and communications skills to provide quality and timely feedback to junior developers on their technical projects to improve code quality and overall performance.',
       ],
     },
     {
       id: 2,
-      title: 'FREELANCE FULL-STACK DEVELOPER',
+      title: 'FULL-STACK DEVELOPER',
       company: 'FreshTech',
       date: 'Nov 2020 – Actual',
-      functions: [
+      activities: [
         'Use creativity, attention to detail, and analytical skills to create and maintain a relevant aesthetic for the company website always ensuring functionality while attractiveness.',
         'Use teamwork, communication, and leading skills to work closely with the client to bring imaginative and creative ideas to life.',
       ],
@@ -30,7 +27,7 @@ const Work = () => {
       title: 'MENTOR(Volunteer)',
       company: 'Microverse',
       date: 'Jul 2021 – Nov 2021',
-      functions: [
+      activities: [
         'Mentored junior web developers, providing technical support through code reviews.',
         'Provided advice and tips on how to maintain motivation to maintain longevity in the program.',
       ],
@@ -40,12 +37,13 @@ const Work = () => {
       title: 'MECHANICAL ENGINEER',
       company: 'HEVCO',
       date: 'Jul 2021 – Nov 2021',
-      functions: [
+      activities: [
         'Designed and developed an application that helped to save 25% of the time in company processes.',
         'Used my experience, good communication, and analytics skills to assist in the creation of a new organizational structure for the after-sales department.',
       ],
     },
   ];
+  const [currentWork, setCurrentWork] = useState(works[0]);
 
   const handleClick = (id) => {
     const work = works.find((work) => work.id === id);
@@ -56,22 +54,27 @@ const Work = () => {
     <section className={styles.container}>
       <h2 className={styles.numberedHeading}>Where I’ve Worked</h2>
       <div className={styles.content}>
-        <ul>
+        <ul className={styles.list}>
           {
             works.map((work) => (
               <li key={work.id}>
-                <button type="button" onClick={() => handleClick(work.id)}>{work.company}</button>
+                <button type="button" onClick={() => handleClick(work.id)}>{work.title}</button>
               </li>
             ))
           }
         </ul>
         {currentWork && (
-        <Card
-          title={currentWork.title}
-          company={currentWork.company}
-          date={currentWork.date}
-          functions={currentWork.functions}
-        />
+        <div>
+          <p className={styles.companyCard}>{currentWork.company}</p>
+          <p className={styles.dateCard}>{currentWork.date}</p>
+          <ul>
+            {
+              currentWork.activities.map((activity) => (
+                <li key={activity}>{activity}</li>
+              ))
+            }
+          </ul>
+        </div>
         )}
 
       </div>
