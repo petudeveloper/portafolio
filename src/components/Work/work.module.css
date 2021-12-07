@@ -91,6 +91,28 @@
   color: var(--light-blue);
 }
 
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    overflow-x: auto;
+  }
+
+  .list button {
+    border: none;
+    width: 100%;
+  }
+
+  .button {
+    padding: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0;
