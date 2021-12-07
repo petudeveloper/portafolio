@@ -1,0 +1,120 @@
+.container {
+  margin-top: 100px;
+  padding: 0 40px;
+}
+
+.numberedHeading::before {
+  color: var(--light-blue);
+  counter-increment: section 1;
+  content: "0" counter(section) ". ";
+  font-family: var(--font-mono);
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+.numberedHeading {
+  color: var(--lightest-slate);
+  font-size: 1.7rem;
+}
+
+.content {
+  color: var(--medium-blue);
+  text-align: justify;
+  font-size: 1.1rem;
+  display: grid;
+  grid-template-columns: 1.3fr 3fr;
+  padding: 30px 0;
+}
+
+.list {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  height: fit-content;
+}
+
+.list li {
+  height: 100%;
+}
+
+.activities {
+  list-style: none; /* Remove default bullets */
+}
+
+.activities li::before {
+  content: "\2023";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--light-blue); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.list button {
+  background-color: transparent;
+  border: none;
+  color: var(--medium-blue);
+  font-family: var(--font-mono);
+  padding: 10px 15px;
+  border-left: 2px solid;
+  width: 90%;
+  text-align: left;
+  height: 100%;
+}
+
+.list button:focus {
+  border-left: 3px solid var(--light-blue);
+  color: var(--light-blue);
+  background-color: var(--light-navy);
+  outline: none;
+}
+
+.list button:hover {
+  background-color: var(--light-navy);
+  cursor: pointer;
+}
+
+.companyCard {
+  color: var(--lightest-slate);
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.dateCard {
+  font-family: var(--font-mono);
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--light-blue);
+}
+
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    overflow-x: auto;
+  }
+
+  .list button {
+    border: none;
+    width: 100%;
+  }
+
+  .button {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+}

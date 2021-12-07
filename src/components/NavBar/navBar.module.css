@@ -53,6 +53,8 @@
 .icons {
   display: none;
   font-size: 1.8rem;
+  position: fixed;
+  right: 15px;
 }
 
 .icons a {
@@ -66,7 +68,7 @@
 
   .visibleLinks {
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     flex-direction: column;

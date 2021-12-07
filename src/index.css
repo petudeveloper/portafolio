@@ -6,6 +6,7 @@
   --medium-blue: #8892b0;
   --lightest-slate: #ccd6f6;
   --font-mono: 'Space Mono', monospace;
+  --light-navy: #233554;
 }
 
 body {
@@ -48,7 +49,7 @@ code {
   margin-top: 35px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .content {
     padding: 0 50px;
   }
