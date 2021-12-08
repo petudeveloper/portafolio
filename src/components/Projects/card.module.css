@@ -4,6 +4,11 @@
   border-bottom: 1px solid var(--light-blue);
   padding: 40px;
   margin: 40px 0;
+  opacity: 0.5;
+}
+
+.container:hover {
+  opacity: 1;
 }
 
 .container:hover {
@@ -13,12 +18,10 @@
 .img {
   width: 350px;
   padding-right: 10px;
-  opacity: 0.5;
   height: 100%;
 }
 
 .img:hover {
-  opacity: 1;
   cursor: pointer;
 }
 
