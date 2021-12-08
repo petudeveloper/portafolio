@@ -1,12 +1,25 @@
 .container {
   display: flex;
-  border: 1px solid var(--light-blue);
-  padding: 10px;
+  border-right: 1px solid var(--light-blue);
+  border-bottom: 1px solid var(--light-blue);
+  padding: 40px;
+  margin: 40px 0;
+}
+
+.container:hover {
+  transform: scale(1.01);
 }
 
 .img {
   width: 350px;
   padding-right: 10px;
+  opacity: 0.5;
+  height: 100%;
+}
+
+.img:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .featuredProyect {
@@ -62,6 +75,7 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    border: 1px solid var(--light-blue);
   }
 
   .infoContainer {

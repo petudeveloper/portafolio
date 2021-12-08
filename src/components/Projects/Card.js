@@ -1,25 +1,33 @@
 /* eslint-disable max-len */
+import PropTypes from 'prop-types';
 import { FiGithub } from 'react-icons/fi';
 import { IoOpenOutline } from 'react-icons/io5';
 import styles from './card.module.css';
 
-const Card = () => (
+const Card = ({
+  image, projectName, description, technologies, githubLink, liveVersion,
+}) => (
   <div className={styles.container}>
-    <img className={styles.img} src="./images/jde-motors.PNG" alt="app-name" />
+    <a href={githubLink}>
+      <img className={styles.img} src={image} alt="app-name" />
+    </a>
     <div className={styles.infoContainer}>
       <p className={styles.featuredProyect}>Featured Project</p>
-      <h3 className={styles.projectTitle}><a className={styles.projectName} href="/">Crypto Data</a></h3>
-      <p className={styles.description}>A mobile web app that displays the total market capitalization of the top 20 cryptocurrencies in the world.</p>
+      <h3 className={styles.projectTitle}><a className={styles.projectName} href="/">{projectName}</a></h3>
+      <p className={styles.description}>
+        {description}
+      </p>
       <div className={styles.bottomContainer}>
         <ul className={styles.listContainer}>
-          <li>React</li>
-          <li>Redux</li>
+          {
+            technologies.map((tech) => <li key={tech}>{tech}</li>)
+          }
         </ul>
         <div className={styles.iconsContainer}>
-          <a href="/">
+          <a href={githubLink}>
             <FiGithub className={styles.icon} />
           </a>
-          <a href="/">
+          <a href={liveVersion}>
             <IoOpenOutline className={styles.icon} />
           </a>
         </div>
@@ -27,5 +35,14 @@ const Card = () => (
     </div>
   </div>
 );
+
+Card.propTypes = {
+  projectName: PropTypes.string.isRequired,
+  liveVersion: PropTypes.string.isRequired,
+  githubLink: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  technologies: PropTypes.isRequired,
+};
 
 export default Card;
