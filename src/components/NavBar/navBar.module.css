@@ -55,6 +55,11 @@
   font-size: 1.8rem;
   position: fixed;
   right: 15px;
+  z-index: 1;
+}
+
+.icons:hover {
+  font-size: 2.1rem;
 }
 
 .icons a {
@@ -76,7 +81,7 @@
     width: 50%;
     grid-gap: 35px;
     justify-content: center;
-    z-index: 0;
+    z-index: 1;
     align-items: center;
     background-color: var(--dark-blue);
     -webkit-box-shadow: -200px -1px 300px 200px rgba(0, 0, 0, 0.75);
@@ -91,7 +96,7 @@
 
   .icons {
     display: block;
-    z-index: 1;
+    z-index: 2;
     cursor: pointer;
   }
 

@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  border-right: 1px solid var(--light-blue);
+  border-bottom: 1px solid var(--light-blue);
+  padding: 40px;
+  margin: 40px 0;
+  opacity: 0.5;
+}
+
+.container:hover {
+  opacity: 1;
+  transform: scale(1.01);
+}
+
+.img {
+  width: 350px;
+  padding-right: 10px;
+  height: 100%;
+}
+
+.img:hover {
+  cursor: pointer;
+}
+
+.featuredProyect {
+  color: var(--light-blue);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.projectTitle {
+  margin-top: 0;
+}
+
+.projectName {
+  color: var(--lightest-slate);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 2.5vw;
+}
+
+.description {
+  padding: 20px;
+  border-radius: var(--border-radius);
+  background-color: var(--light-navy);
+  color: var(--lightest-slate);
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+.infoContainer {
+  text-align: right;
+}
+
+.listContainer {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--medium-blue);
+  gap: 15px;
+  display: flex;
+  padding: 0;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: var(--light-blue);
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    border: 1px solid var(--light-blue);
+  }
+
+  .infoContainer {
+    text-align: left;
+    margin-top: 15px;
+  }
+
+  .listContainer {
+    justify-content: flex-start;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .img {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .bottomContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
