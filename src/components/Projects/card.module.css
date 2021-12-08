@@ -9,9 +9,6 @@
 
 .container:hover {
   opacity: 1;
-}
-
-.container:hover {
   transform: scale(1.01);
 }
 
