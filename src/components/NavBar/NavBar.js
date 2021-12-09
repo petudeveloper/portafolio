@@ -64,7 +64,14 @@ const NavBar = ({
             </li>
           </ol>
           <div>
-            <a href="https://drive.google.com/file/d/10bXSy-KujbD_eB2rkJ79WwhLdxfNXFUd/view?usp=sharing" className={styles.resumeLink}>Resume</a>
+            <a
+              href="https://drive.google.com/file/d/10bXSy-KujbD_eB2rkJ79WwhLdxfNXFUd/view?usp=sharing"
+              className={styles.resumeLink}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resume
+            </a>
           </div>
         </div>
       </nav>
