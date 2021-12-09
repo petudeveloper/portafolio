@@ -1,12 +1,13 @@
 /* eslint-disable max-len */
+import PropTypes from 'prop-types';
 import styles from './contact.module.css';
 
-const Contact = () => {
+const Contact = ({ refProp }) => {
   const handleClick = () => {
     console.log('this is a test');
   };
   return (
-    <section className={styles.container}>
+    <section id="#Contact" ref={refProp} className={styles.container}>
       <h2 className={styles.numberedHeading}>What’s Next?</h2>
       <h2 className={styles.secondTitle}>Get In Touch</h2>
       <p className={styles.text}>
@@ -17,6 +18,10 @@ const Contact = () => {
       </div>
     </section>
   );
+};
+
+Contact.propTypes = {
+  refProp: PropTypes.isRequired,
 };
 
 export default Contact;

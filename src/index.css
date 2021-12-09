@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --dark-blue: #0a192f;
   --light-blue: #64ffda;
@@ -27,6 +31,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   counter-reset: section;
   height: 100vh;
+  line-height: 1.3;
 }
 
 .App {
@@ -44,13 +49,13 @@ code {
 }
 
 .content {
-  padding: 0 100px;
+  padding: 100px;
   text-align: left;
   margin-top: 35px;
 }
 
 @media (max-width: 768px) {
   .content {
-    padding: 0 50px;
+    padding: 100px 50px;
   }
 }

@@ -1,8 +1,9 @@
+import PropTypes from 'prop-types';
 import Card from './Card';
 import styles from './projects.module.css';
 
-const Projects = () => (
-  <section className={styles.container}>
+const Projects = ({ refProp }) => (
+  <section id="#Work" ref={refProp} className={styles.container}>
     <h2 className={styles.numberedHeading}>Some Things I’ve Built</h2>
     <div className={styles.cardsContainer}>
       <Card
@@ -32,5 +33,9 @@ const Projects = () => (
     </div>
   </section>
 );
+
+Projects.propTypes = {
+  refProp: PropTypes.isRequired,
+};
 
 export default Projects;

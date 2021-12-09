@@ -1,8 +1,9 @@
 /* eslint-disable max-len */
+import PropTypes from 'prop-types';
 import styles from './aboutMe.module.css';
 
-const AboutMe = () => (
-  <section className={styles.container}>
+const AboutMe = ({ refProp }) => (
+  <section id="#About" ref={refProp} className={styles.container}>
     <h2 className={styles.numberedHeading}>About Me</h2>
     <div className={styles.content}>
       <div>
@@ -30,5 +31,9 @@ const AboutMe = () => (
     </div>
   </section>
 );
+
+AboutMe.propTypes = {
+  refProp: PropTypes.isRequired,
+};
 
 export default AboutMe;

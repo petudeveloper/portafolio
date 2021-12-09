@@ -52,6 +52,12 @@
   text-decoration: none;
 }
 
+.btn:hover {
+  color: var(--dark-blue);
+  background-color: var(--light-blue);
+  font-weight: bold;
+}
+
 .btnContainer {
   height: auto;
   margin: 50px 0;
