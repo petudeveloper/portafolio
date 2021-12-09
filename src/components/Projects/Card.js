@@ -42,7 +42,7 @@ Card.propTypes = {
   githubLink: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  technologies: PropTypes.isRequired,
+  technologies: PropTypes.arrayOf.isRequired,
 };
 
 export default Card;

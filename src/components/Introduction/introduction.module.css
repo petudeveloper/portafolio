@@ -34,3 +34,7 @@
 .highlight {
   color: var(--light-blue);
 }
+
+@media (max-width: 765px) {
+  .text {font-size: 1.2rem;}
+}

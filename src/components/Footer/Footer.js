@@ -1,9 +1,9 @@
 import styles from './footer.module.css';
 
 const Footer = () => (
-  <div className={styles.container}>
+  <footer className={styles.container}>
     Designed & Built by @petudeveloper
-  </div>
+  </footer>
 );
 
 export default Footer;

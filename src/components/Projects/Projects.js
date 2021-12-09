@@ -9,7 +9,7 @@ const Projects = () => (
         image="./images/jde-motors.PNG"
         projectName="JDE Motors"
         description="An app was made to book a car to test it before you buy it. The front end was made with react and redux, and the back end was made with rails. The whole page is connected by using API."
-        technologies={['React', 'Redux', 'Jest', 'Rails', 'RSpec']}
+        technologies={['React', 'Redux', 'Rails']}
         githubLink="https://github.com/Emmanuelaaron/carBooking"
         liveVersion="/"
       />
