@@ -9,7 +9,7 @@
 
 .numberedHeading {
   color: var(--lightest-slate);
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 .container {
@@ -20,7 +20,7 @@
 .content {
   color: var(--medium-blue);
   text-align: justify;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   display: grid;
   gap: 65px;
   grid-template-columns: 2fr 1fr;

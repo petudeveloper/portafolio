@@ -1,10 +1,58 @@
 .container {
-  margin-top: 100px;
+  margin-top: 200px;
   padding: 0 40px;
   opacity: 0.6;
+  text-align: center;
 }
 
 .container:hover {
   opacity: 1;
   transform: scale(1.01);
+}
+
+.numberedHeading::before {
+  color: var(--light-blue);
+  counter-increment: section 1;
+  content: "0" counter(section) ". ";
+  font-family: var(--font-mono);
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+.numberedHeading {
+  font-family: var(--font-mono);
+  font-weight: normal;
+  font-size: 1.3rem;
+  color: var(--light-blue);
+  margin: 7px;
+}
+
+.secondTitle {
+  color: var(--lightest-slate);
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.text {
+  color: var(--medium-blue);
+  line-height: 1.3;
+  font-size: 1.2rem;
+  padding-bottom: 50px;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid var(--light-blue);
+  padding: 1.25rem 1.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--light-blue);
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.btnContainer {
+  height: auto;
+  margin: 50px 0;
 }

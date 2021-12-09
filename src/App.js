@@ -4,6 +4,7 @@ import AboutMe from './components/AboutMe/AboutMe';
 import Work from './components/Work/Work';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 const App = () => (
   <div className="App">
@@ -15,6 +16,7 @@ const App = () => (
       <Projects />
       <Contact />
     </div>
+    <Footer />
   </div>
 );
 
