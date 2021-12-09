@@ -1,6 +1,12 @@
 .container {
-  margin-top: 100px;
+  margin-top: 200px;
   padding: 0 40px;
+  opacity: 0.6;
+}
+
+.container:hover {
+  opacity: 1;
+  transform: scale(1.01);
 }
 
 .numberedHeading::before {
@@ -14,7 +20,7 @@
 
 .numberedHeading {
   color: var(--lightest-slate);
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 .content {

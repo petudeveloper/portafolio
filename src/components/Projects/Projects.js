@@ -1,15 +1,16 @@
+import PropTypes from 'prop-types';
 import Card from './Card';
 import styles from './projects.module.css';
 
-const Projects = () => (
-  <section className={styles.container}>
+const Projects = ({ refProp }) => (
+  <section id="#Work" ref={refProp} className={styles.container}>
     <h2 className={styles.numberedHeading}>Some Things I’ve Built</h2>
     <div className={styles.cardsContainer}>
       <Card
         image="./images/jde-motors.PNG"
         projectName="JDE Motors"
-        description="An app was made to book a car to test it before you buy it. The front end was made with react and redux, and the back end was made with rails. The whole page is connected by using API."
-        technologies={['React', 'Redux', 'Jest', 'Rails', 'RSpec']}
+        description="This is a web app that enables users to book an appointment to try their dream cars. The front end was made with react and redux, and the back end was made with rails. The whole page is connected by using API."
+        technologies={['React', 'Redux', 'Rails']}
         githubLink="https://github.com/Emmanuelaaron/carBooking"
         liveVersion="/"
       />
@@ -32,5 +33,9 @@ const Projects = () => (
     </div>
   </section>
 );
+
+Projects.propTypes = {
+  refProp: PropTypes.isRequired,
+};
 
 export default Projects;

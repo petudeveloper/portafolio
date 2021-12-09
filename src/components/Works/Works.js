@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/no-autofocus */
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import styles from './work.module.css';
 
-const Work = () => {
-  const works = [
+const Works = ({ refProp }) => {
+  const listOfWorks = [
     {
       id: 1,
       title: 'CODE REVIEWER',
@@ -44,23 +45,25 @@ const Work = () => {
       ],
     },
   ];
-  const [currentWork, setCurrentWork] = useState(works[0]);
+  const [currentWork, setCurrentWork] = useState(listOfWorks[0]);
 
   const handleClick = (id) => {
-    const work = works.find((work) => work.id === id);
+    const work = listOfWorks.find((work) => work.id === id);
     setCurrentWork(work);
   };
 
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
-    <section className={styles.container}>
+    <section id="#Experinece" ref={refProp} className={styles.container}>
       <h2 className={styles.numberedHeading}>Where I’ve Worked</h2>
       <div className={styles.content}>
         <ul className={styles.list}>
-          <li key={works[0].id}>
-            <button autoFocus type="button" onClick={() => handleClick(works[0].id)}>{works[0].title}</button>
+          <li key={listOfWorks[0].id}>
+            <button autoFocus type="button" onClick={() => handleClick(listOfWorks[0].id)}>{listOfWorks[0].title}</button>
           </li>
           {
-            works.slice(1).map((work) => (
+            listOfWorks.slice(1).map((work) => (
               <li key={work.id}>
                 <button type="button" onClick={() => handleClick(work.id)}>{work.title}</button>
               </li>
@@ -86,4 +89,8 @@ const Work = () => {
   );
 };
 
-export default Work;
+Works.propTypes = {
+  refProp: PropTypes.isRequired,
+};
+
+export default Works;

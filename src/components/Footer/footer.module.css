@@ -1,0 +1,8 @@
+.container {
+  margin: 200px 0;
+  padding-bottom: 50px;
+  text-align: center;
+  color: var(--medium-blue);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}

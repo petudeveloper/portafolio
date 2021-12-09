@@ -1,5 +1,5 @@
 .container {
-  margin-top: 100px;
+  margin-top: 200px;
   padding: 0 40px;
 }
 
@@ -14,7 +14,7 @@
 
 .numberedHeading {
   color: var(--lightest-slate);
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 .cardsContainer {

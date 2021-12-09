@@ -9,18 +9,25 @@
 
 .numberedHeading {
   color: var(--lightest-slate);
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 .container {
-  margin-top: 100px;
+  margin-top: 200px;
   padding: 0 50px;
+  opacity: 0.6;
+}
+
+.container:hover,
+.container:active {
+  opacity: 1;
+  transform: scale(1.01);
 }
 
 .content {
   color: var(--medium-blue);
   text-align: justify;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   display: grid;
   gap: 65px;
   grid-template-columns: 2fr 1fr;
@@ -29,9 +36,7 @@
 .imageContainer {
   position: relative;
   padding: 15px;
-  border-right: solid 1px var(--light-blue);
-  border-top: solid 1px var(--light-blue);
-  text-align: right;
+  text-align: left;
   border-radius: 0 10px 0 0;
   height: fit-content;
 }
@@ -41,11 +46,13 @@
   border-radius: 10px;
   max-width: 205px;
   opacity: 0.6;
+  padding: 5px;
 }
 
 .img:hover {
   transform: scale(1.01);
   opacity: 1;
+  border: solid 1px var(--light-blue);
 }
 
 .list {
