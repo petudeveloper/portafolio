@@ -57,6 +57,12 @@
   text-decoration: none;
   color: var(--light-blue);
   border-radius: 4px;
+  font-weight: bold;
+}
+
+.resumeLink:hover {
+  color: var(--dark-blue);
+  background-color: var(--light-blue);
 }
 
 .icons {
