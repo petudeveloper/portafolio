@@ -69,6 +69,13 @@
   margin-left: 10px;
 }
 
+.bottomContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media (max-width: 1024px) {
   .container {
     display: grid;
@@ -91,12 +98,5 @@
   .img {
     width: 100%;
     padding: 10px;
-  }
-
-  .bottomContainer {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
   }
 }
