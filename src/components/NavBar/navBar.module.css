@@ -51,7 +51,6 @@
   cursor: pointer;
 }
 
-
 .listElement:hover {
   color: var(--light-blue);
 }

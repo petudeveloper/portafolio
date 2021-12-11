@@ -1,11 +1,11 @@
 import {
   FiGithub, FiInstagram, FiTwitter, FiLinkedin,
 } from 'react-icons/fi';
-import styles from './footer.module.css';
+import styles from './socialMedia.module.css';
 
-const Footer = () => (
-  <footer className={styles.container}>
-    <ul className={styles.iconContainer}>
+const SocialMedia = () => (
+  <div className={styles.container}>
+    <ul className={styles.list}>
       <li>
         <a target="_blank" href="https://github.com/petudeveloper" className={styles.icon} rel="noreferrer">
           <FiGithub />
@@ -27,12 +27,7 @@ const Footer = () => (
         </a>
       </li>
     </ul>
-    <p>
-      Designed & Built by
-      {' '}
-      <a target="_blank" href="https://github.com/petudeveloper" rel="noreferrer">@petudeveloper</a>
-    </p>
-  </footer>
+  </div>
 );
 
-export default Footer;
+export default SocialMedia;

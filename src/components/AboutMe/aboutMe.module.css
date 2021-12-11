@@ -15,12 +15,10 @@
 .container {
   margin-top: 200px;
   padding: 0 50px;
-  opacity: 0.6;
 }
 
 .container:hover,
 .container:active {
-  opacity: 1;
   transform: scale(1.01);
 }
 
@@ -46,6 +44,7 @@
   border-radius: 10px;
   max-width: 205px;
   padding: 5px;
+  opacity: 0.6;
 }
 
 .img:hover {
