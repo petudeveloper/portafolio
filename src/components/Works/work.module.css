@@ -1,11 +1,9 @@
 .container {
   margin-top: 200px;
   padding: 0 40px;
-  opacity: 0.6;
 }
 
 .container:hover {
-  opacity: 1;
   transform: scale(1.01);
 }
 

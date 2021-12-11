@@ -36,6 +36,8 @@ body {
 
 .App {
   background-color: var(--dark-blue);
+  position: absolute;
+  top: 0;
 }
 
 code {
@@ -49,7 +51,7 @@ code {
 }
 
 .content {
-  padding: 100px;
+  padding: 100px 100px 200px 100px;
   text-align: left;
   margin-top: 35px;
 }

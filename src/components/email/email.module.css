@@ -1,0 +1,36 @@
+.container {
+  position: fixed;
+  font-size: 1.4rem;
+  bottom: 0;
+  right: 40px;
+  writing-mode: vertical-lr;
+  display: flex;
+  gap: 30px;
+}
+
+.container a {
+  text-decoration: none;
+  font-family: var(--font-mono);
+  color: var(--medium-blue);
+  font-size: 1rem;
+}
+
+.container a:hover {
+  color: var(--light-blue);
+  transform: translateY(-3px);
+}
+
+.container::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 90px;
+  margin: 0 auto;
+  background-color: var(--medium-blue);
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: none;
+  }
+}

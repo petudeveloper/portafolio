@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 import styles from './navBar.module.css';
+import debounce from '../../utilities/helpers';
 
 const NavBar = ({
   aboutProp, experienciaProp, workRefProp, contactProp,
@@ -12,6 +13,24 @@ const NavBar = ({
     e.preventDefault();
     setOpen(!open);
   };
+
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  const handleScroll = debounce(() => {
+    const currentScrollPos = window.pageYOffset;
+
+    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70)
+    || currentScrollPos < 10);
+
+    setPrevScrollPos(currentScrollPos);
+  }, 100);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos, visible, handleScroll]);
 
   const executeScroll = (reference) => {
     switch (reference) {
@@ -32,8 +51,12 @@ const NavBar = ({
     }
   };
 
+  const navbarStyles = {
+    transition: 'top 0.5s',
+  };
+
   return (
-    <header className={styles.container}>
+    <header className={styles.container} style={{ ...navbarStyles, top: visible ? '0' : '-150px' }}>
       <nav className={styles.nav}>
         <div>
           <a href="/" className={styles.logoLink}>

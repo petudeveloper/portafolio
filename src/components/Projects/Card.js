@@ -24,10 +24,10 @@ const Card = ({
           }
         </ul>
         <div className={styles.iconsContainer}>
-          <a href={githubLink}>
+          <a target="_blank" href={githubLink} rel="noreferrer">
             <FiGithub className={styles.icon} />
           </a>
-          <a href={liveVersion}>
+          <a target="_blank" href={liveVersion} rel="noreferrer">
             <IoOpenOutline className={styles.icon} />
           </a>
         </div>

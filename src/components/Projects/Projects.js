@@ -12,7 +12,7 @@ const Projects = ({ refProp }) => (
         description="This is a web app that enables users to book an appointment to try their dream cars. The front end was made with react and redux, and the back end was made with rails. The whole page is connected by using API."
         technologies={['React', 'Redux', 'Rails']}
         githubLink="https://github.com/Emmanuelaaron/carBooking"
-        liveVersion="/"
+        liveVersion="https://github.com/Emmanuelaaron/carBooking"
       />
       <Card
         image="./images/space-travelers.PNG"

@@ -6,13 +6,11 @@ My personal personal portafolio
 
 ## Built With
 
-- HTML
-- CSS
-- Bootstrap
+- React
 
 ## Live Demo
 
-[Live Demo Link](https://petumazo.github.io/portafolio/)
+[Live Demo Link](https://petudeveloper.netlify.app/)
 
 
 ## Authors
