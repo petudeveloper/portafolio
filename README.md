@@ -2,26 +2,22 @@
 
 My personal personal portafolio
 
-![screenshot](images/project-screenshot.png)
-
 ## Built With
 
-- HTML
-- CSS
-- Bootstrap
+- React
 
 ## Live Demo
 
-[Live Demo Link](https://petumazo.github.io/portafolio/)
+[Live Demo Link](https://petudeveloper.netlify.app/)
 
 
 ## Authors
 
 👤 **David Alvarez**
 
-- GitHub: [@petumazo](https://github.com/petumazo)
+- GitHub: [@petumazo](https://github.com/petudeveloper)
 - Twitter: [@petudeveloper](https://twitter.com/petudeveloper)
-- LinkedIn: [David Alvarez](https://www.linkedin.com/in/david-alvarez-mazzo-777712143/)
+- LinkedIn: [David Alvarez](https://www.linkedin.com/in/davidalvarezmazzo/)
 
 ## 🤝 Contributing
 

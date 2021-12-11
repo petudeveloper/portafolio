@@ -4,11 +4,9 @@
   border-bottom: 1px solid var(--light-blue);
   padding: 40px;
   margin: 40px 0;
-  opacity: 0.5;
 }
 
 .container:hover {
-  opacity: 1;
   transform: scale(1.01);
 }
 
@@ -16,10 +14,12 @@
   width: 350px;
   padding-right: 10px;
   height: 100%;
+  opacity: 0.6;
 }
 
 .img:hover {
   cursor: pointer;
+  opacity: 1;
 }
 
 .featuredProyect {
@@ -54,8 +54,7 @@
 }
 
 .listContainer {
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin: 10px 0;
   color: var(--medium-blue);
   gap: 15px;
   display: flex;
@@ -68,6 +67,13 @@
   font-size: 1.2rem;
   color: var(--light-blue);
   margin-left: 10px;
+}
+
+.bottomContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (max-width: 1024px) {
@@ -92,12 +98,5 @@
   .img {
     width: 100%;
     padding: 10px;
-  }
-
-  .bottomContainer {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
   }
 }

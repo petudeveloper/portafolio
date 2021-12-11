@@ -5,6 +5,8 @@ import AboutMe from './components/AboutMe/AboutMe';
 import Work from './components/Works/Works';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+import SocialMedia from './components/SocialMedia/SocialMedia';
+import Email from './components/email/Email';
 import Footer from './components/Footer/Footer';
 
 const App = () => {
@@ -27,6 +29,8 @@ const App = () => {
         <Projects refProp={workRef} />
         <Contact refProp={contactRef} />
       </div>
+      <SocialMedia />
+      <Email />
       <Footer />
     </div>
   );

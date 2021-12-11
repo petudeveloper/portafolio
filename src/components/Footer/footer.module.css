@@ -1,5 +1,4 @@
 .container {
-  margin: 200px 0;
   padding-bottom: 50px;
   text-align: center;
   color: var(--medium-blue);
@@ -14,4 +13,20 @@
 
 .container a:hover {
   font-weight: bold;
+}
+
+.iconContainer {
+  list-style: none;
+  justify-content: center;
+  gap: 50px;
+  font-size: 1.5rem;
+  padding: 0;
+  display: none;
+  margin: 0;
+}
+
+@media (max-width: 765px) {
+  .iconContainer {
+    display: flex;
+  }
 }
