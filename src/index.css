@@ -51,13 +51,13 @@ code {
 }
 
 .content {
-  padding: 100px;
+  padding: 100px 100px 200px 100px;
   text-align: left;
   margin-top: 35px;
 }
 
 @media (max-width: 768px) {
   .content {
-    padding: 100px 50px 80px 50px;
+    padding: 100px 50px;
   }
 }
