@@ -52,7 +52,7 @@ const NavBar = ({
   };
 
   const navbarStyles = {
-    transition: 'top 1s',
+    transition: 'top 0.5s',
   };
 
   return (
