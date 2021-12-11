@@ -51,6 +51,11 @@
   cursor: pointer;
 }
 
+
+.listElement:hover {
+  color: var(--light-blue);
+}
+
 .resumeLink {
   border: 1px solid var(--light-blue);
   padding: 10px 15px;
