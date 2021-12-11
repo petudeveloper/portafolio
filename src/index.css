@@ -36,6 +36,8 @@ body {
 
 .App {
   background-color: var(--dark-blue);
+  position: absolute;
+  top: 0;
 }
 
 code {
