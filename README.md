@@ -2,8 +2,6 @@
 
 My personal personal portafolio
 
-![screenshot](images/project-screenshot.png)
-
 ## Built With
 
 - React
@@ -17,9 +15,9 @@ My personal personal portafolio
 
 👤 **David Alvarez**
 
-- GitHub: [@petumazo](https://github.com/petumazo)
+- GitHub: [@petumazo](https://github.com/petudeveloper)
 - Twitter: [@petudeveloper](https://twitter.com/petudeveloper)
-- LinkedIn: [David Alvarez](https://www.linkedin.com/in/david-alvarez-mazzo-777712143/)
+- LinkedIn: [David Alvarez](https://www.linkedin.com/in/davidalvarezmazzo/)
 
 ## 🤝 Contributing
 
