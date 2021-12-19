@@ -26,7 +26,7 @@ const AboutMe = ({ refProp }) => (
         </ul>
       </div>
       <div className={styles.imageContainer}>
-        <img className={styles.img} src="./images/foto-David.jpg" alt="David Alvarez" />
+        <img className={styles.img} src="./images/foto-David2.jpg" alt="David Alvarez" />
       </div>
     </div>
   </section>
