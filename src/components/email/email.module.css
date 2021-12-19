@@ -12,7 +12,8 @@
   text-decoration: none;
   font-family: var(--font-mono);
   color: var(--medium-blue);
-  font-size: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
 }
 
 .container a:hover {
