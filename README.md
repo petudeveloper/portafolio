@@ -8,7 +8,7 @@ My personal personal portafolio
 
 ## Live Demo
 
-[Live Demo Link](https://petudeveloper.netlify.app/)
+[Live Demo Link](https://www.petudeveloper.com/)
 
 
 ## Authors
