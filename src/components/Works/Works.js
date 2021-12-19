@@ -7,7 +7,7 @@ const Works = ({ refProp }) => {
   const listOfWorks = [
     {
       id: 1,
-      title: 'Code Reviewer(Part-time)',
+      title: 'Code Reviewer (Part-time)',
       company: 'Microverse',
       date: 'Nov 2021 – Actual',
       activities: [
@@ -16,7 +16,7 @@ const Works = ({ refProp }) => {
     },
     {
       id: 2,
-      title: 'Full-Stack Developer(Part-time)',
+      title: 'Full-Stack Developer (Part-time)',
       company: 'FreshTech',
       date: 'Jan 2020 – Actual',
       activities: [
@@ -26,7 +26,7 @@ const Works = ({ refProp }) => {
     },
     {
       id: 3,
-      title: 'Mentor(Volunteer)',
+      title: 'Mentor (Volunteer)',
       company: 'Microverse',
       date: 'Jul 2021 – Nov 2021',
       activities: [
