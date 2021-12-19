@@ -23,7 +23,7 @@ const Projects = ({ refProp }) => (
         liveVersion="https://petudeveloper.github.io/space-travelers/"
       />
       <Card
-        image="./images/crypto-data.png"
+        image="./images/crypto-data2.png"
         projectName="Crypto Market tracking"
         description="A mobile web app that displays the total market capitalization of the top 20 cryptocurrencies in the world."
         technologies={['React', 'Redux', 'Jest']}

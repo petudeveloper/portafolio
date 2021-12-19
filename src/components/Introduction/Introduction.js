@@ -6,9 +6,9 @@ const Introduction = () => (
     <h2 className={styles.h2}>David Alvarez.</h2>
     <h3 className={styles.h3}>I build things for the web.</h3>
     <p className={styles.text}>
-      I&apos;m a Colombia-based software engineer specializing in building
+      I&apos;m a Colombia-based software engineer specializing in
       {' '}
-      (and occasionally designing)exceptional digital experiences. Currently,
+      building (and occasionally designing) exceptional digital experiences. Currently,
       {' '}
       I&apos;m focused on building accessible, human-centered products as a freelance
       {' '}
