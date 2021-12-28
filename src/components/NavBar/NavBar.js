@@ -88,7 +88,7 @@ const NavBar = ({
           </ol>
           <div>
             <a
-              href="https://drive.google.com/file/d/1OOj9_DHxCzpakMnY7ssYlKFTqMnYaNO9/view?usp=sharing"
+              href="https://drive.google.com/file/d/1rFcNtlyhZ0Dw9Ztw9rigV27v9thpuQzi/view?usp=sharing"
               className={styles.resumeLink}
               target="_blank"
               rel="noreferrer"
