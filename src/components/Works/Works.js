@@ -18,7 +18,7 @@ const Works = ({ refProp }) => {
       id: 2,
       title: 'Full-Stack Developer (Part-time)',
       company: 'FreshTech',
-      date: 'Jan 2020 – Actual',
+      date: 'Jan 2021 – Actual',
       activities: [
         'I used creativity, attention to detail, and analytical skills to create and maintain a relevant aesthetic for the company website always ensuring functionality while attractiveness.',
         'I used teamwork, communication, and leading skills to work closely with the client to bring imaginative and creative ideas to life.',
@@ -38,7 +38,7 @@ const Works = ({ refProp }) => {
       id: 4,
       title: 'Mechanical Engineer',
       company: 'HEVCO',
-      date: 'Jul 2021 – Nov 2021',
+      date: 'Jul 2020 – Nov 2020',
       activities: [
         'I designed and developed an application that helped to save 25% of the time in company processes.',
         'I used my experience, good communication, and analytics skills to assist in the creation of a new organizational structure for the after-sales department.',
