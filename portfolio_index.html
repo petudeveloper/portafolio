@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Jesus A. Mazzo(petudeveloper) portfolio - shows projects, contact and links." />
+  <title>Jesus A. Mazzo (petudeveloper) — Portfolio</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa7b2;--accent:#60a5fa}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;background:linear-gradient(180deg,#071021 0%, #0f1724 100%);color:#e6eef6;line-height:1.45}
+    .container{max-width:960px;margin:40px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;font-weight:700;color:#04263a}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-size:14px}
+    h1{font-size:28px;margin:0}
+    .lead{color:var(--muted);margin-top:6px}
+    .hero{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;padding:20px;background:rgba(255,255,255,0.02);border-radius:12px}
+    .cta{display:flex;gap:12px;margin-top:12px}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.08);padding:10px 14px;border-radius:10px;color:inherit;text-decoration:none;font-weight:600}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#38bdf8);color:#04263a;border:0}
+    section{margin-top:20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+    .card{background:var(--card);padding:16px;border-radius:10px}
+    .card h3{margin:0 0 8px 0;font-size:16px}
+    .muted{color:var(--muted);font-size:14px}
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+    @media(max-width:640px){.hero{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">P</div>
+        <div>
+          <div style="font-weight:700">Petu</div>
+          <div class="muted" style="font-size:13px">Software developer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/YOUR_USERNAME" target="_blank">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div>
+          <h1>Hi — I'm David</h1>
+          <p class="lead">Software Engineer specialized in QA Automation and Fullstack Development (Python & JavaScript), with solid expertise in both frontend and backend.</p>
+          <div class="cta">
+            <a class="btn primary" href="#contact">Contact me</a>
+            <a class="btn" href="#projects">See projects</a>
+          </div>
+        </div>
+        <div style="text-align:right">
+          <div style="display:inline-block;background:rgba(255,255,255,0.02);padding:18px;border-radius:12px">
+            <div style="font-weight:700;font-size:18px">Key info</div>
+            <div class="muted" style="margin-top:8px">Location: Colombia</div>
+            <div class="muted">Role: Test Automation / SDET</div>
+            <div class="muted">Email: <a href="mailto:you@example.com" style="color:var(--accent)">you@example.com</a></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 style="margin:14px 0 8px 0">Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>TAE Toolbox</h3>
+            <div class="muted">A set of automation scripts and templates for Test Automation Engineers.</div>
+            <div style="margin-top:10px"><a class="btn" href="https://github.com/YOUR_USERNAME/tae-toolbox" target="_blank">View repo</a></div>
+          </article>
+
+          <article class="card">
+            <h3>P2Express</h3>
+            <div class="muted">Business MVP: laundry management web dashboard and operations notes.</div>
+            <div style="margin-top:10px"><a class="btn" href="#" target="_blank">Read more</a></div>
+          </article>
+
+          <article class="card">
+            <h3>Personal website</h3>
+            <div class="muted">This portfolio: lightweight, single HTML file for fast deploy.</div>
+            <div style="margin-top:10px"><a class="btn" href="#home">This page</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2 style="margin:14px 0 8px 0">About</h2>
+        <div class="card">
+          <p class="muted">I am a semi-senior Python & JavaScript developer focused on test automation, CI pipelines and simple, production-ready web tools. I prefer clear code and minimal UX that loads fast and ranks well on search engines.</p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 style="margin:14px 0 8px 0">Contact</h2>
+        <div class="card">
+          <p class="muted">Email: <a href="mailto:davidalvarezmazzo@gmail.com" style="color:var(--accent)">davidalvarezmazzo@gmail.com</a></p>
+          <p class="muted">Or open an issue on GitHub: <a href="https://github.com/petudeveloper/YOUR_REPO" target="_blank" style="color:var(--accent)">github.com/YOUR_USERNAME</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>Built with minimal HTML — deploy on GitHub Pages</div>
+    </footer>
+  </div>
+</body>
+</html>
