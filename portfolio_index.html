@@ -32,6 +32,12 @@
     .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:inherit;text-decoration:none;font-weight:600;text-align:center}
     .btn.primary{background:linear-gradient(90deg,var(--accent),#38bdf8);color:#04263a;border:0}
 
+    /* Mobile menu button & dropdown */
+    .menu-btn{display:none;background:transparent;border:1px solid rgba(255,255,255,0.08);color:#e6eef6;padding:8px 12px;border-radius:10px;font-weight:600}
+    .mobile-nav{display:none;background:var(--card);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:10px;margin-top:8px}
+    .mobile-nav a{display:block;padding:10px;border-radius:8px;color:var(--muted);text-decoration:none}
+    .mobile-nav a:hover{background:rgba(255,255,255,0.04);color:#e6eef6}
+
     .section{margin-top:20px}
     .projects-wrapper{max-height:500px;overflow-y:auto}
     .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
@@ -43,8 +49,16 @@
     /* Actions (buttons) */
     .actions{display:flex;gap:10px;flex-wrap:wrap}
     @media (max-width: 700px){
-      .actions .btn{flex:1 1 100%}
+      .page{margin:12px}
+      header{flex-direction:row;align-items:center;position:relative;border-bottom:none}
+      .menu-btn{display:block}
+      nav{display:none}
+      .hero h1{font-size:22px}
+      .avatar{width:48px;height:48px}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .projects-wrapper{max-height:500px;overflow-y:auto}
     }
+    
 
     footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
 
@@ -111,6 +125,7 @@
           <div class="meta">Software Engineer (QA Automation & Fullstack)</div>
         </div>
       </div>
+      <button class="menu-btn" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Toggle navigation">☰</button>
       <nav>
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
@@ -118,6 +133,14 @@
         <a href="https://github.com/YOUR_USERNAME" target="_blank">GitHub</a>
       </nav>
     </header>
+
+    <!-- Mobile dropdown navigation -->
+    <div id="mobileNav" class="mobile-nav" hidden>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/YOUR_USERNAME" target="_blank">GitHub</a>
+    </div>
 
     <main>
       <section class="hero" id="home">
@@ -294,5 +317,24 @@
       <div>Built with minimal HTML — deploy on GitHub Pages</div>
     </footer>
   </div>
+<script>
+  (function(){
+    const btn = document.getElementById('menuToggle');
+    const panel = document.getElementById('mobileNav');
+    if(!btn || !panel) return;
+    btn.addEventListener('click', function(){
+      const open = panel.hasAttribute('hidden') === false;
+      if(open){
+        panel.setAttribute('hidden','');
+        panel.style.display = 'none';
+        this.setAttribute('aria-expanded','false');
+      } else {
+        panel.removeAttribute('hidden');
+        panel.style.display = 'block';
+        this.setAttribute('aria-expanded','true');
+      }
+    });
+  })();
+</script>
 </body>
 </html>
