@@ -80,6 +80,26 @@
     }
 
     .info-box{background:rgba(255,255,255,0.02);padding:16px;border-radius:10px;text-align:left}
+      .info-box{background:rgba(255,255,255,0.02);padding:16px;border-radius:10px;text-align:left}
+
+    /* Skills badges & lists */
+    .skills{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .skill-group{background:var(--card);padding:10px;border-radius:8px}
+    .xp{margin:0;padding-left:18px}
+    .xp li{margin:8px 0}
+
+      /* Refined skills & experience styles (clean/minimal) */
+    .skills{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .skill-group{padding:0}
+    .badge-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+    .badge{padding:6px 10px;border:1px solid rgba(255,255,255,0.08);border-radius:999px;background:rgba(255,255,255,0.02);font-size:13px;color:var(--muted)}
+    @media (max-width: 700px){.skills{grid-template-columns:1fr}}
+
+    .timeline{border-left:2px solid rgba(255,255,255,0.08);padding-left:14px;margin:0}
+    .timeline .item{margin:12px 0}
+    .timeline .title{font-weight:600}
+    .timeline .desc{color:var(--muted);font-size:14px;margin-top:4px}
+
   </style>
 </head>
 <body>
@@ -182,6 +202,75 @@
               <a class="btn" href="#" target="_blank">Live demo</a>
             </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="card">
+          <div class="skills">
+            <div class="skill-group">
+              <div class="title">Languages</div>
+              <div class="badge-row">
+                <span class="badge">Python</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">TypeScript</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <div class="title">QA & Testing</div>
+              <div class="badge-row">
+                <span class="badge">Playwright</span>
+                <span class="badge">Selenium</span>
+                <span class="badge">Pytest</span>
+                <span class="badge">Jest</span>
+                <span class="badge">POM</span>
+                <span class="badge">Allure</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <div class="title">Web & APIs</div>
+              <div class="badge-row">
+                <span class="badge">React</span>
+                <span class="badge">Node.js</span>
+                <span class="badge">Express</span>
+                <span class="badge">FastAPI</span>
+                <span class="badge">REST</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <div class="title">CI/CD & DevOps</div>
+              <div class="badge-row">
+                <span class="badge">GitHub Actions</span>
+                <span class="badge">Docker</span>
+                <span class="badge">Docker Compose</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <h2>Key Experience</h2>
+        <div class="card">
+          <div class="timeline">
+            <div class="item">
+              <div class="title">QA Automation Framework</div>
+              <div class="desc">Designed a scalable framework (Python/JS) with Playwright/Selenium, POM, parallel runs and Allure; reduced test runtime by ~60%.</div>
+            </div>
+            <div class="item">
+              <div class="title">CI/CD pipelines</div>
+              <div class="desc">Implemented GitHub Actions + Docker for build/test/deploy; gated merges with quality checks and artifacts.</div>
+            </div>
+            <div class="item">
+              <div class="title">API & Web apps</div>
+              <div class="desc">Built small apps with FastAPI/Express and React, focusing on reliability, performance and DX.</div>
+            </div>
+            <div class="item">
+              <div class="title">Testing strategy</div>
+              <div class="desc">Layered tests (unit, API, e2e) + contract tests; improved coverage and reduced flaky tests.</div>
+            </div>
           </div>
         </div>
       </section>
