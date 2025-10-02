@@ -3,40 +3,93 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Jesus A. Mazzo(petudeveloper) portfolio - shows projects, contact and links." />
-  <title>Jesus A. Mazzo (petudeveloper) — Portfolio</title>
+  <meta name="description" content="Portfolio of David A. Mazzo (petudeveloper). Software Developer specialized in Test Automation, Python and JavaScript. Projects, contact and links." />
+  <title>petudeveloper — Software Developer Portfolio</title>
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa7b2;--accent:#60a5fa}
+    :root{
+      --bg:#0f1724;--card:#0b1220;--muted:#9aa7b2;--accent:#60a5fa;--glass:rgba(255,255,255,0.03);
+      --radius:12px;--container:1100px
+    }
     *{box-sizing:border-box}
-    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;background:linear-gradient(180deg,#071021 0%, #0f1724 100%);color:#e6eef6;line-height:1.45}
-    .container{max-width:960px;margin:40px auto;padding:20px}
-    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;background:linear-gradient(180deg,#071021 0%, #0f1724 100%);color:#e6eef6;line-height:1.45;-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+
+    .page{max-width:var(--container);margin:28px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
     .brand{display:flex;align-items:center;gap:12px}
     .avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;font-weight:700;color:#04263a}
-    nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-size:14px}
-    h1{font-size:28px;margin:0}
-    .lead{color:var(--muted);margin-top:6px}
-    .hero{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;padding:20px;background:rgba(255,255,255,0.02);border-radius:12px}
-    .cta{display:flex;gap:12px;margin-top:12px}
-    .btn{background:transparent;border:1px solid rgba(255,255,255,0.08);padding:10px 14px;border-radius:10px;color:inherit;text-decoration:none;font-weight:600}
+    .meta{font-size:13px;color:var(--muted)}
+
+    nav{display:flex;gap:14px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;padding:8px;border-radius:8px}
+    nav a:hover{color:var(--accent)}
+
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:center;margin-top:18px;padding:22px;background:var(--glass);border-radius:var(--radius)}
+    .hero h1{font-size:28px;margin:0}
+    .lead{color:var(--muted);margin-top:8px}
+    .cta{display:flex;gap:10px;margin-top:14px}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:inherit;text-decoration:none;font-weight:600;text-align:center}
     .btn.primary{background:linear-gradient(90deg,var(--accent),#38bdf8);color:#04263a;border:0}
-    section{margin-top:20px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-    .card{background:var(--card);padding:16px;border-radius:10px}
+
+    .section{margin-top:20px}
+    .projects-wrapper{max-height:500px;overflow-y:auto}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .card{background:var(--card);padding:16px;border-radius:10px;display:flex;flex-direction:column}
+    .card img{width:100%;border-radius:8px;margin-bottom:12px}
     .card h3{margin:0 0 8px 0;font-size:16px}
     .muted{color:var(--muted);font-size:14px}
+
+    /* Actions (buttons) */
+    .actions{display:flex;gap:10px;flex-wrap:wrap}
+    @media (max-width: 700px){
+      .actions .btn{flex:1 1 100%}
+    }
+
     footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
-    @media(max-width:640px){.hero{grid-template-columns:1fr;}}
+
+    @media (max-width: 1024px){
+      .projects-wrapper{max-height:500px;overflow-y:auto}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .hero{grid-template-columns:1fr; padding:16px}
+    }
+
+    @media (max-width: 700px){
+      .page{margin:12px}
+      header{flex-direction:row;align-items:center}
+      nav{display:none}
+      .hero h1{font-size:22px}
+      .avatar{width:48px;height:48px}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .projects-wrapper{max-height:500px;overflow-y:auto}
+    }
+
+    /* Scrollbar minimalista */
+    .projects-wrapper::-webkit-scrollbar {
+      width: 6px;
+    }
+    .projects-wrapper::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .projects-wrapper::-webkit-scrollbar-thumb {
+      background-color: var(--muted);
+      border-radius: 10px;
+    }
+    .projects-wrapper::-webkit-scrollbar-thumb:hover {
+      background-color: var(--accent);
+    }
+
+    .info-box{background:rgba(255,255,255,0.02);padding:16px;border-radius:10px;text-align:left}
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="page">
     <header>
       <div class="brand">
         <div class="avatar">P</div>
         <div>
           <div style="font-weight:700">Petu</div>
-          <div class="muted" style="font-size:13px">Software developer</div>
+          <div class="meta">Software Engineer (QA Automation & Fullstack)</div>
         </div>
       </div>
       <nav>
@@ -50,64 +103,101 @@
     <main>
       <section class="hero" id="home">
         <div>
-          <h1>Hi — I'm David</h1>
+          <h1>Hi — I'm Petu</h1>
           <p class="lead">Software Engineer specialized in QA Automation and Fullstack Development (Python & JavaScript), with solid expertise in both frontend and backend.</p>
           <div class="cta">
             <a class="btn primary" href="#contact">Contact me</a>
             <a class="btn" href="#projects">See projects</a>
           </div>
         </div>
-        <div style="text-align:right">
-          <div style="display:inline-block;background:rgba(255,255,255,0.02);padding:18px;border-radius:12px">
-            <div style="font-weight:700;font-size:18px">Key info</div>
-            <div class="muted" style="margin-top:8px">Location: Colombia 🌍 | Open to relocation</div>
-            <div class="muted">Role: Software Engineer</div>
-            <div class="muted">Email: <a href="mailto:davidalvarezmazzo@gmail.com" style="color:var(--accent)">davidalvarezmazzo@gmail.com</a></div>
+
+        <aside class="info-box">
+          <div style="font-weight:700;font-size:18px">Key info</div>
+          <div class="muted" style="margin-top:8px">Location: Colombia 🌍 | Open to relocation opportunities</div>
+          <div class="muted">Role: Software Engineer (QA Automation & Fullstack)</div>
+          <div class="muted">Email: <a href="mailto:you@example.com" style="color:var(--accent)">you@example.com</a></div>
+        </aside>
+      </section>
+
+      <section id="projects" class="section">
+        <h2 style="margin:14px 0 8px 0">Projects</h2>
+        <div class="projects-wrapper">
+          <div class="grid">
+            <article class="card">
+              <img src="assets/qa-framework-preview.png" alt="QA Automation Framework preview">
+              <h3>QA Automation Framework</h3>
+              <div class="muted">Scalable, modular test automation framework for Web & API testing with Python/JavaScript.</div>
+              <div class="actions" style="margin-top:10px">
+                <a class="btn" href="https://github.com/YOUR_USERNAME/qa-automation-framework" target="_blank">View repo</a>
+                <a class="btn" href="#" target="_blank">Live demo</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <img src="assets/tae-toolbox-preview.png" alt="TAE Toolbox preview">
+              <h3>TAE Toolbox</h3>
+              <div class="muted">A set of automation scripts and templates for Test Automation Engineers.</div>
+              <div class="actions" style="margin-top:10px">
+              <a class="btn" href="https://github.com/YOUR_USERNAME/tae-toolbox" target="_blank">View repo</a>
+              <a class="btn" href="#" target="_blank">Live demo</a>
+            </div>
+            </article>
+
+            <article class="card">
+              <img src="assets/p2express-preview.png" alt="P2Express project preview">
+              <h3>P2Express</h3>
+              <div class="muted">Business MVP: laundry management web dashboard and operations notes.</div>
+              <div class="actions" style="margin-top:10px">
+              <a class="btn" href="#" target="_blank">View repo</a>
+              <a class="btn" href="#" target="_blank">Live demo</a>
+            </div>
+            </article>
+
+            <article class="card">
+              <img src="assets/portfolio-preview.png" alt="Portfolio project preview">
+              <h3>Personal Website</h3>
+              <div class="muted">This portfolio: lightweight, single HTML file for fast deploy.</div>
+              <div class="actions" style="margin-top:10px">
+              <a class="btn" href="#" target="_blank">View repo</a>
+              <a class="btn" href="#" target="_blank">Live demo</a>
+            </div>
+            </article>
+
+            <article class="card">
+              <img src="assets/starlink-preview.png" alt="Starlink project preview">
+              <h3>Starlink Rural Internet</h3>
+              <div class="muted">Project to provide rural connectivity with Starlink and digital services.</div>
+              <div class="actions" style="margin-top:10px">
+              <a class="btn" href="#" target="_blank">View repo</a>
+              <a class="btn" href="#" target="_blank">Live demo</a>
+            </div>
+            </article>
+
+            <article class="card">
+              <img src="assets/vending-preview.png" alt="Vending machine system preview">
+              <h3>Vending Machine System</h3>
+              <div class="muted">Prototype management system for smart vending machines.</div>
+              <div class="actions" style="margin-top:10px">
+              <a class="btn" href="#" target="_blank">View repo</a>
+              <a class="btn" href="#" target="_blank">Live demo</a>
+            </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="projects">
-        <h2 style="margin:14px 0 8px 0">Projects</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>TAE Toolbox</h3>
-            <div class="muted">A set of automation scripts and templates for Test Automation Engineers.</div>
-            <div style="margin-top:10px"><a class="btn" href="https://github.com/YOUR_USERNAME/tae-toolbox" target="_blank">View repo</a></div>
-          </article>
-
-          <article class="card">
-            <h3>P2Express</h3>
-            <div class="muted">Business MVP: laundry management web dashboard and operations notes.</div>
-            <div style="margin-top:10px"><a class="btn" href="#" target="_blank">Read more</a></div>
-          </article>
-
-          <article class="card">
-            <h3>Personal website</h3>
-            <div class="muted">This portfolio: lightweight, single HTML file for fast deploy.</div>
-            <div style="margin-top:10px"><a class="btn" href="#home">This page</a></div>
-          </article>
+      <section id="about" class="section">
+        <h2>About</h2>
+        <div class="card">
+          <p class="muted">I’m a Software Engineer passionate about building reliable solutions that combine quality assurance, automation, and development. With a strong background in QA Automation and hands-on experience in Python and JavaScript, I can work across the full stack — from frontend to backend. I enjoy creating efficient, scalable, and user-focused applications, always with a focus on performance and maintainability.</p>
         </div>
       </section>
 
-      <section id="about">
-        <h2 style="margin:14px 0 8px 0">About</h2>
+      <section id="contact" class="section">
+        <h2>Contact</h2>
         <div class="card">
-          <p class="muted">I am a Software Engineer passionate about building reliable solutions 
-            that combine quality assurance, automation, and development. With a strong background 
-            in QA Automation and hands-on experience in Python and JavaScript I am able to work 
-            across the full stack — from frontend interfaces to backend systems. I enjoy creating 
-            efficient, scalable, and user-focused applications always with an eye on performance 
-            and maintainability. My goal is to bridge the gap between quality and development, 
-            contributing to teams as both a QA engineer and a developer.</p>
-        </div>
-      </section>
-
-      <section id="contact">
-        <h2 style="margin:14px 0 8px 0">Contact</h2>
-        <div class="card">
-          <p class="muted">Email: <a href="mailto:davidalvarezmazzo@gmail.com" style="color:var(--accent)">davidalvarezmazzo@gmail.com</a></p>
-          <p class="muted">Or open an issue on GitHub: <a href="https://github.com/petudeveloper/portafolio" target="_blank" style="color:var(--accent)">github.com/petudeveloper/portafolio</a></p>
+          <p class="muted">Email: <a href="mailto:you@example.com" style="color:var(--accent)">you@example.com</a></p>
+          <p class="muted">Or open an issue on GitHub: <a href="https://github.com/YOUR_USERNAME/YOUR_REPO" target="_blank" style="color:var(--accent)">github.com/YOUR_USERNAME</a></p>
         </div>
       </section>
     </main>
